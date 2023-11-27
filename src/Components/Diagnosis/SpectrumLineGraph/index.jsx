@@ -1,4 +1,3 @@
-import React from 'react';
 import './SpectrumLineGraph.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
 // import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';

@@ -1,6 +1,6 @@
 //npm install react-apexcharts apexcharts
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Chart from 'react-apexcharts';
 import PropTypes from 'prop-types';
 

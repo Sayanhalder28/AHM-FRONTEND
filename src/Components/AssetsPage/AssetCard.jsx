@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { InformationCircleIcon } from '@heroicons/react/24/solid';
 import { useNavigate } from 'react-router-dom';

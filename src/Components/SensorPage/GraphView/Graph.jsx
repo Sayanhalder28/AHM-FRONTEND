@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import StreamingPlugin from 'chartjs-plugin-streaming';
 import { Line } from 'react-chartjs-2';
 import 'chartjs-adapter-luxon';

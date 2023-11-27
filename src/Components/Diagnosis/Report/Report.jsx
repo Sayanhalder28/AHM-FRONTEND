@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import API_URL from '../../../config.js';
 import AccelerationSpectra from './ReportGraphs/AccelerationSpectra';
