@@ -3,13 +3,14 @@ import ClientCards from '../../Components/ClientsPage/ClientCards';
 import Modal from '../../Utils/Modal';
 import WorkshopRegistrationForm from '../../Components/Forms/WorkshopRegistrationForm';
 import Loading from '../../Utils/Loading';
+import API_URL from '../../config';
 function Clients() {
   const [workshopList, setWorkshopList] = useState([]);
   const [loading, setLoading] = useState(true); // Add a loading state
 
   useEffect(() => {
     const fetchWorkShopList = async () => {
-      const response = await fetch(`/data/workshop/workshop-list`);
+      const response = await fetch(`${API_URL}/data/workshop/workshop-list`);
       if (response.ok) {
         const data = await response.json();
         setWorkshopList(data.data);

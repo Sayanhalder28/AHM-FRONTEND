@@ -1,4 +1,4 @@
-const API_URL = 'iema-ahm-backend.onrender.com';
+const API_URL = 'https://iema-ahm-backend.onrender.com';
 // const API_URL = '192.168.90.91:8080';
 // const API_URL = 'localhost:8080';
 

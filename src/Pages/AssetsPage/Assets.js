@@ -4,6 +4,7 @@ import Modal from '../../Utils/Modal';
 import AssetRegForm from '../../Components/Forms/AssetRegForm';
 import AssetCard from '../../Components/AssetsPage/AssetCard';
 import Loading from '../../Utils/Loading';
+import API_URL from '../../config';
 
 function Assets() {
   const { workshopCode } = useParams();
@@ -11,7 +12,7 @@ function Assets() {
   const [loading, setLoading] = React.useState(true);
 
   const getAssets = async () => {
-    const response = await fetch(`/data/asset/asset-list?workshop=${workshopCode}`);
+    const response = await fetch(`${API_URL}/data/asset/asset-list?workshop=${workshopCode}`);
     if (response.ok) {
       const data = await response.json();
       setData(data.data);

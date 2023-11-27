@@ -38,7 +38,7 @@ const Report = () => {
   useEffect(() => {
     const getAssetDetails = async () => {
       const res = await fetch(
-        `/data/sensor/sensor-data?assetId=${assetId}&sensorType=${sensorType}`,
+        `${API_URL}/data/sensor/sensor-data?assetId=${assetId}&sensorType=${sensorType}`,
       );
       const data = await res.json();
       setAssetDetails(data.data);

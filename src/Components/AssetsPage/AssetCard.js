@@ -7,6 +7,7 @@ import ReactCardFlip from 'react-card-flip';
 import motor from '../.././assets/motor-nobg.png';
 import Sensor from './Sensor/Sensor';
 import PropTypes from 'prop-types';
+import API_URL from '../../config';
 
 function AssetCard({ assetID, sensorsConnected, sensorIDs, assetType, site, workshop }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -23,7 +24,7 @@ function AssetCard({ assetID, sensorsConnected, sensorIDs, assetType, site, work
   const navigate = useNavigate();
 
   const fetchUrls = sensorsConnected.map(
-    (sensor) => `/data/sensor/sesor-health?assetId=${assetID}&sensorType=${sensor.sensor_type}`,
+    (sensor) => `${API_URL}/data/sensor/sesor-health?assetId=${assetID}&sensorType=${sensor.sensor_type}`,
   );
 
   useEffect(() => {
