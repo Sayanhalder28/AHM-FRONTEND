@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { InformationCircleIcon } from '@heroicons/react/24/solid';
 import { useNavigate } from 'react-router-dom';
@@ -24,7 +24,8 @@ function AssetCard({ assetID, sensorsConnected, sensorIDs, assetType, site, work
   const navigate = useNavigate();
 
   const fetchUrls = sensorsConnected.map(
-    (sensor) => `${API_URL}/data/sensor/sesor-health?assetId=${assetID}&sensorType=${sensor.sensor_type}`,
+    (sensor) =>
+      `${API_URL}/data/sensor/sesor-health?assetId=${assetID}&sensorType=${sensor.sensor_type}`,
   );
 
   useEffect(() => {

@@ -1,3 +1,4 @@
+import React from 'react';
 import GlowingDot from './GlowingDot';
 
 import PropTypes from 'prop-types';

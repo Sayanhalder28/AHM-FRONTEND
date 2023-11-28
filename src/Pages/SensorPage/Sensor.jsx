@@ -74,7 +74,9 @@ function Sensor() {
   const [formattedTimeStamp, setFormattedTimeStamp] = React.useState('');
 
   const fetchAnalogData = async () => {
-    const res = await fetch(`${API_URL}/data/sensor/sensor-data?assetId=${assetId}&sensorType=${sensorType}`);
+    const res = await fetch(
+      `${API_URL}/data/sensor/sensor-data?assetId=${assetId}&sensorType=${sensorType}`,
+    );
     const data = await res.json();
     return data.data;
   };
@@ -85,8 +87,8 @@ function Sensor() {
 
   useEffect(() => {
     const fetchAnalogThreshold = async () => {
-      const res = await fetch(`${API_URL}/data/sensor/sensor-threshold?sensorId=${sensorId}`).then((res) =>
-        res.json(),
+      const res = await fetch(`${API_URL}/data/sensor/sensor-threshold?sensorId=${sensorId}`).then(
+        (res) => res.json(),
       );
       const data = await res;
       return data.data;

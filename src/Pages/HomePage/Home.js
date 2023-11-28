@@ -1,4 +1,5 @@
 import { Cog8ToothIcon } from '@heroicons/react/24/solid';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
         <div className='rounded bg-white h-auto min-height-40 shadow bg-gradient-to-r from-violet-400 to-violet-300'>
           <Link to='/devices'>
             <div className='grid grid-rows-1 justify-center content-center self-center mt-12'>
-              <p className='text-white text-2xl font-bold'>Clients</p>
+              <p className='text-white text-2xl font-bold'>All Clients</p>
               <p className='text-white text-2xl font-bold ml-10'>234</p>
             </div>
           </Link>

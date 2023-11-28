@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import PropTypes from 'prop-types';
 import './WorkshopRegistrationForm.css';

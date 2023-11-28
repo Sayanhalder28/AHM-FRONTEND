@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function clientCards({ nameID, location, image, TWclass, workshopCode }) {

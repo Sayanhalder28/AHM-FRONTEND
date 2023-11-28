@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ClientCards from '../../Components/ClientsPage/ClientCards';
 import Modal from '../../Utils/Modal';
 import WorkshopRegistrationForm from '../../Components/Forms/WorkshopRegistrationForm';

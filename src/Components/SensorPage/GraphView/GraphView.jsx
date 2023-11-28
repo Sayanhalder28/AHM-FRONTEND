@@ -1,3 +1,4 @@
+import React from 'react';
 import Graph from './Graph';
 import { InformationCircleIcon } from '@heroicons/react/24/solid';
 

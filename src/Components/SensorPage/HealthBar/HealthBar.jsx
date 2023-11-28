@@ -1,3 +1,5 @@
+import React from 'react';
+
 function HealthBar() {
   const healthStatus = [
     'good',
