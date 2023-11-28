@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Bars3CenterLeftIcon, HomeIcon, PowerIcon, UserIcon } from '@heroicons/react/24/solid';
 import PropTypes from 'prop-types';
-import IEMALogo from '../../assets/IEMA.png';
+import IEMALogo from '../../assets/iemathree.png';
 
 const SideBar = forwardRef(({ showNav, isMobile, setShowNav }, ref) => {
   const location = useLocation();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import IEMALogo from '../../assets/IEMA.png';
+import IEMALogo from '../../assets/iemathree.png';
 import SAILLogo from '../../assets/sailtwoo.png';
 import './forgotpass.css';
 

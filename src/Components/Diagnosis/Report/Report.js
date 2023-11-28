@@ -11,7 +11,7 @@ import VibrationVelocityTrendGraph from './ReportGraphs/VibrationVelocityTrendGr
 import MagneticFieldSpectraGraph from './ReportGraphs/MagneticFieldSpectraGraph';
 import TemperatureTrendGraph from './ReportGraphs/TemperatureTrendGraph';
 
-import AccelerationICO from '../../../assets/alert.png';
+import AccelerationICO from '../../../assets/info.png';
 
 import { useReactToPrint } from 'react-to-print';
 
