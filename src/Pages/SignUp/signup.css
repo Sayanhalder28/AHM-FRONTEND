@@ -8,7 +8,7 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../../../public/assets/bgimage.jpeg');
+  background-image: url('../../assets/bgimage.jpeg');
   justify-content: center !important;
   align-items: center !important;
 }

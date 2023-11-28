@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import IEMALogo from '../../assets/iemathree.png';
 import './login.css';
 
 const SignIn = () => {
@@ -49,7 +50,7 @@ const SignIn = () => {
   return (
     <div className='login-container flex-col lg:flex-row'>
       <div>
-        <img src='./assets/iemathree.png' alt='logo' className='w-60 lg:w-auto lg:mr-36' />
+        <img src={IEMALogo} alt='logo' className='w-60 lg:w-auto lg:mr-36' />
       </div>
       <div className='login-form w-96 h-full sm:w-2/3 lg:w-1/3 rounded'>
         <h2 className='login-heading'>Login</h2>

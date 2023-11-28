@@ -2,6 +2,7 @@ import { forwardRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Bars3CenterLeftIcon, HomeIcon, PowerIcon, UserIcon } from '@heroicons/react/24/solid';
 import PropTypes from 'prop-types';
+import IEMALogo from '../../assets/IEMA.png';
 
 const SideBar = forwardRef(({ showNav, isMobile, setShowNav }, ref) => {
   const location = useLocation();
@@ -18,7 +19,7 @@ const SideBar = forwardRef(({ showNav, isMobile, setShowNav }, ref) => {
 
       <div className='flex justify-center mt-7 mb-14 px-14 '>
         <div className='flex flex-col items-center'>
-          <img className='w-32 h-auto' src='/IEMA.png' alt='company logo' />
+          <img className='w-32 h-auto' src={IEMALogo} alt='company logo' />
           <h1 className='text-xl font-bold text-blue-900'>IEMA</h1>
         </div>
       </div>

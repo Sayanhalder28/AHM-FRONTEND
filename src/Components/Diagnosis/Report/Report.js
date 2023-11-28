@@ -11,6 +11,8 @@ import VibrationVelocityTrendGraph from './ReportGraphs/VibrationVelocityTrendGr
 import MagneticFieldSpectraGraph from './ReportGraphs/MagneticFieldSpectraGraph';
 import TemperatureTrendGraph from './ReportGraphs/TemperatureTrendGraph';
 
+import AccelerationICO from '../../../assets/alert.png';
+
 import { useReactToPrint } from 'react-to-print';
 
 const Report = () => {
@@ -214,7 +216,7 @@ const Report = () => {
               <h1 className='font-semibold text-lg'>Motor Health Report:</h1>
               <div className='mt-4'>
                 <span className='py-1 flex justify-center font-semibold text-xl bg-gray-200 border-x border-t border-slate-950'>
-                  <img src='./acceleration.svg' alt='' className='h-6 w-6 mr-5' />
+                  <img src={AccelerationICO} alt='' className='h-6 w-6 mr-5' />
                   Temperature
                 </span>{' '}
                 <table className='table-auto mx-auto w-full'>
@@ -261,7 +263,7 @@ const Report = () => {
               </div>
               <div className='mt-4'>
                 <span className='py-1 flex justify-center font-semibold text-xl bg-gray-200 border-x border-t border-slate-950'>
-                  <img src='./acceleration.svg' alt='' className='h-6 w-6 mr-5' />
+                  <img src={AccelerationICO} alt='' className='h-6 w-6 mr-5' />
                   Acceleration
                 </span>{' '}
                 <table className='table-auto mx-auto w-full'>
@@ -308,7 +310,7 @@ const Report = () => {
               </div>
               <div className='mt-4'>
                 <span className='py-1 flex justify-center font-semibold text-xl bg-gray-200 border-x border-t border-slate-950'>
-                  <img src='./acceleration.svg' alt='' className='h-6 w-6 mr-5' />
+                  <img src={AccelerationICO} alt='' className='h-6 w-6 mr-5' />
                   Magnetic Field
                 </span>{' '}
                 <table className='table-auto mx-auto w-full'>

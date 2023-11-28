@@ -11,6 +11,7 @@ import { useParams } from 'react-router-dom';
 import Loading from '../../Utils/Loading';
 import { useQuery } from 'react-query';
 import API_URL from '../../config';
+import AlertICO from '../../assets/alert.png';
 
 function Sensor() {
   const [graphView, setGrapgView] = useState(false);
@@ -288,7 +289,7 @@ function Sensor() {
             <div className=' w-full h-full flex flex-col gap-3 items-center p-7 justify-start border-x-2 border-b-2 border-slate-500 rounded-b-md overflow-y-auto'>
               {/* alert 1  */}
               <div className='w-full flex items-center p-2 px-5 bg-white shadow-inner rounded-lg h-max content-center'>
-                <img src='/assets/alert.png' alt='alert sign' className='h-12'></img>
+                <img src={AlertICO} alt='alert sign' className='h-12'></img>
                 <div className=' w-full flex justify-between gap-2 ml-2'>
                   <p className='text-sm sm:text-base font-bold text-gray-800 text-left'>
                     Unhealthy Vibration Detected
@@ -298,7 +299,7 @@ function Sensor() {
               </div>
               {/* alert 2  */}
               <div className='w-full flex items-center p-2 px-5 bg-white shadow-inner rounded-lg h-max content-center'>
-                <img src='/assets/alert.png' alt='alert sign' className='h-12'></img>
+                <img src={AlertICO} alt='alert sign' className='h-12'></img>
                 <div className=' w-full flex justify-between gap-2 ml-2'>
                   <p className='text-sm sm:text-base font-bold text-gray-800 text-left'>
                     Unhealthy Magnetic Flux Detected
@@ -308,7 +309,7 @@ function Sensor() {
               </div>
               {/* alert 1  */}
               <div className='w-full flex items-center p-2 px-5 bg-white shadow-inner rounded-lg h-max content-center'>
-                <img src='/assets/alert.png' alt='alert sign' className='h-12'></img>
+                <img src={AlertICO} alt='alert sign' className='h-12'></img>
                 <div className=' w-full flex justify-between gap-2 ml-2'>
                   <p className='text-sm sm:text-base font-bold text-gray-800 text-left'>
                     Unhealthy Vibration Detected
@@ -318,7 +319,7 @@ function Sensor() {
               </div>
               {/* alert 2  */}
               <div className='w-full flex items-center p-2 px-5 bg-white shadow-inner rounded-lg h-max content-center'>
-                <img src='/assets/alert.png' alt='alert sign' className='h-12'></img>
+                <img src={AlertICO} alt='alert sign' className='h-12'></img>
                 <div className=' w-full flex justify-between gap-2 ml-2'>
                   <p className='text-sm sm:text-base font-bold text-gray-800 text-left'>
                     Unhealthy Vibration Detected
@@ -328,7 +329,7 @@ function Sensor() {
               </div>
               {/* alert 1  */}
               <div className='w-full flex items-center p-2 px-5 bg-white shadow-inner rounded-lg h-max content-center'>
-                <img src='/assets/alert.png' alt='alert sign' className='h-12'></img>
+                <img src={AlertICO} alt='alert sign' className='h-12'></img>
                 <div className=' w-full flex justify-between gap-2 ml-2'>
                   <p className='text-sm sm:text-base font-bold text-gray-800 text-left'>
                     Unhealthy Vibration Detected
@@ -338,7 +339,7 @@ function Sensor() {
               </div>
               {/* alert 2  */}
               <div className='w-full flex items-center p-2 px-5 bg-white shadow-inner rounded-lg h-max content-center'>
-                <img src='/assets/alert.png' alt='alert sign' className='h-12'></img>
+                <img src={AlertICO} alt='alert sign' className='h-12'></img>
                 <div className=' w-full flex justify-between gap-2 ml-2'>
                   <p className='text-sm sm:text-base font-bold text-gray-800 text-left'>
                     Unhealthy Vibration Detected

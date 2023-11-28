@@ -10,6 +10,7 @@ import { BellIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { Menu, Transition, Popover } from '@headlessui/react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import UserICO from '../../assets/user.png';
 
 export default function TopBar({ showNav, setShowNav }) {
   return (
@@ -101,7 +102,7 @@ export default function TopBar({ showNav, setShowNav }) {
             <Menu.Button className='inline-flex w-full justify-center items-center'>
               <picture>
                 <img
-                  src='/assets/user.png'
+                  src={UserICO}
                   className='rounded-full h-8 md:mr-4 border-2 border-white shadow-sm'
                   alt='profile'
                 />

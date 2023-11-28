@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import IEMALogo from '../../assets/IEMA.png';
+import SAILLogo from '../../assets/sailtwoo.png';
 import './forgotpass.css';
 
 function ForgotPass() {
@@ -27,7 +29,7 @@ function ForgotPass() {
   return (
     <div className='forgot-pass-container'>
       <div>
-        <img src='/iemathree.png' alt='logo' className='h-auto mt-6 mb-14 mr-52' />
+        <img src={IEMALogo} alt='logo' className='h-auto mt-6 mb-14 mr-52' />
       </div>
       <div className='forgot-pass-form'>
         <h2>Recover Password</h2>
@@ -42,7 +44,7 @@ function ForgotPass() {
         </button>
       </div>
       <div>
-        <img src='/sailtwoo.png' alt='' className='h-auto mt-12 mb-14 ml-52' />
+        <img src={SAILLogo} alt='' className='h-auto mt-12 mb-14 ml-52' />
       </div>
     </div>
   );
